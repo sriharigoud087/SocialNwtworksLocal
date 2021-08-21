@@ -12,7 +12,7 @@
         <div *ngIf="!isAuthed">
             <app-login></app-login>
         </div>
-        <div>
+        <div *ngIf="showPosts">
             <div *ngFor="let item of postArray">
                 <app-postcard [post]="item"></app-postcard>
             </div>

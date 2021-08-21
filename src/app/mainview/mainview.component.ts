@@ -15,6 +15,14 @@ export class MainviewComponent implements OnInit {
   postArray:any=[];
   showPosts=false;
   ngOnInit(): void {
+    
+    if(localStorage.getItem('_id')){
+      this.isAuthed=true;
+    }
+    else{
+      this.isAuthed=false;
+
+    }
     if(localStorage.getItem("postArr"))
     {
        this.postArray=JSON.parse(localStorage["postArr"]);
