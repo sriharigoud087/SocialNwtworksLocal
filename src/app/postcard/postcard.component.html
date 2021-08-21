@@ -1,0 +1,42 @@
+<div *ngIf="post" class="allCenter" style="padding: 5px;" >
+    <div class="mainPostDiv allCenter ">
+      <div class="postCardHeader">
+          <div class="postCardHead">
+                <div class="proImgDiv">
+                    <img class="propic" src="{{post.profilePic}}">
+                </div>
+                <div class="allCenter ">
+                    <span class="bold-Headings colorBlue">{{post.name}}</span><br>
+                   
+                </div>
+          </div>
+      </div>
+      <div class="directionsDiv">
+        <a  class="showdirtext" href="https://google.com/maps/dir/?api=1&amp;destination=+'{{post.latitude}}'+,+{{post.longitude}}+" target="_blank">  <span class=" allCenter"><img style="width: 20px ;" src="../../assets/gmaps.png">Show on GoogleMaps
+           
+            </span></a>
+      </div>
+      <div class="postCardBody">
+        <div class="allCenter" style="flex-direction: column;">
+            <span class="w-100" style="margin:5px;">{{post.content}}</span>
+            <div *ngIf="post.image">
+            <img  class="postImage" src="{{post.image}}">
+
+            </div>
+        </div>
+        </div>
+        <div class="postBottom">
+           <div class="bottomImgs">
+               <img src="../../assets/nonewlike.svg" >
+               <img src="../../assets/newcmnt.svg" >
+
+               <img src="../../assets/newmsg.svg" >
+
+               <img src="../../assets/share.svg" >
+               <img src="../../assets/whatsapp.svg" >
+
+           </div>
+        </div>
+       
+    </div>
+</div>

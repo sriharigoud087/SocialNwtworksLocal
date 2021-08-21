@@ -1,0 +1,23 @@
+.profileDiv{
+    width: 600px;
+    height: 155px;
+    border: 1px solid #d7d7d7;
+    margin: 59px;
+    position: relative;
+}
+
+.imgDiv{
+    position: absolute;
+    left: 42%;
+    bottom: 75%;
+}
+
+.imgDiv >img{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+}
+.middleFeed{
+    width: 100%;
+    flex-direction: column;
+}

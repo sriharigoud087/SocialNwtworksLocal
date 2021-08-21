@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+.allCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.bold-Headings{
+    font-size: 20px;
+    font-weight: 600px;
+
+}
+
+.text-muted{
+    font-size: 16px;
+    color: #d7d7d7;
+}
+
+.colorBlue{
+    color: #6fa4e9!important;
+    font-size: 24px;
+}
+
+.w-100{
+    width: 100%;
+}
+.cursorPointer{
+    cursor: pointer;
+}

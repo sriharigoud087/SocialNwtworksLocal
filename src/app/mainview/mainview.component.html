@@ -1,0 +1,33 @@
+<div class="mainDivAll">
+    <div class="allCenter bold-Headings2 ">
+        <span>Assignment</span>
+    </div>
+    <div class="topBar" *ngIf="isAuthed">
+        <app-topbar></app-topbar>
+    </div>
+    <div class="mainView">
+        
+  
+    <div class="middleFeed">
+        <div *ngIf="!isAuthed">
+            <app-login></app-login>
+        </div>
+        <div>
+            <div *ngFor="let item of postArray">
+                <app-postcard [post]="item"></app-postcard>
+            </div>
+        </div>
+      
+        <div *ngIf="!showPosts&&isAuthed">
+            <h1>Please click on 'Create post' to create posts</h1>
+        </div>
+    </div>
+    
+    
+    </div>
+
+    
+
+
+
+</div>

@@ -1,0 +1,11 @@
+.topBarDiv{
+    background-color: #ffffff;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #d7d7d7; 
+}
+
+span{
+    color: #6fa4e9!important;
+}

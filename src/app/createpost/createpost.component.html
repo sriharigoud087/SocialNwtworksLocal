@@ -1,0 +1,27 @@
+<div class="topBar" >
+    <app-topbar></app-topbar>
+</div>
+<div class="allCenter">
+    <div class=" allCenter createDiv">
+        <div class="textAreaDiv">
+            <textarea class="" rows="15" cols="20" type="textarea" placeholder="write something" [(ngModel)]=content></textarea>
+        </div>
+        <div  *ngIf="!showImage">
+            <div >
+                <span (click)="onClick()"  class="colorBlue cursorPointer"><img src="../../assets/imageicon.svg">Select Image</span>
+            </div>
+            <input hidden type="file" #myFile accept="image/*" (change)="onImagePicked($event)" >
+        </div>
+
+        <div *ngIf="showImage"> 
+            <img class="imgDisplay" [src]="base64Image"/> 
+
+        </div>
+        <span (click)="getLocation()" class="colorBlue cursorPointer"><img src="../../assets/loc.svg">Tag Location</span>
+        <span *ngIf="showToast" class="text-muted">Tagged Location</span>
+        <div class="btnDiv">
+        <span  class="allCenter cursorPointer"  (click)="createPost()">Create</span>
+
+        </div>
+    </div>  
+</div>
